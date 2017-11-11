@@ -1,0 +1,32 @@
+[filter "hawser"]
+	clean = git hawser clean %f
+	smudge = git hawser smudge %f
+	required = true
+[user]
+	name = Breno Martinusso
+	email = EMAIL
+
+[filter "lfs"]
+	clean = git-lfs clean %f
+	smudge = git-lfs smudge %f
+	required = true
+
+[diff]
+  tool = kdiff3
+
+[merge]
+  tool = diffmerge
+
+[difftool "kdiff3"]
+  path = C:/Program Files/KDiff3/kdiff3.exe
+  keepBackup = false
+  trustExitCode = false
+
+[mergetool "diffmerge"]
+  cmd = 'C:/Program Files/SourceGear/Common/DiffMerge/sgdm.exe' -merge -result=\"$MERGED\" \"$LOCAL\" \"$BASE\" \"$REMOTE\"
+  keepBackup = false
+  trustExitCode = true
+
+[core]
+	autocrlf = true
+	excludesfile = C:\\Users\\Breno\\Documents\\gitignore_global.txt

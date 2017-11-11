@@ -1,0 +1,21 @@
+[user]
+        email = email here
+        name = name here
+[push]
+        default = simple
+[credential]
+        helper = cache --timeout=2628000
+[merge]
+        tool = meld
+[diff]
+        tool = meld
+[difftool]
+        prompt = false
+[alias]
+        st = status
+        co = commit
+        br = branch
+        ch = checkout
+        dif = difftool
+        lg = log --pretty=short
+        ls = ls-files
