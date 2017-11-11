@@ -1,0 +1,8 @@
+{
+    "file_exclude_patterns":
+    [
+        "*.pyc",
+        "*.pyo"
+    ],
+    "tab_size": 4
+}
