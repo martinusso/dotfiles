@@ -1,6 +1,9 @@
 vimfiles
 ========
 
+:warning:
+**Disregard this repo, see https://github.com/martinusso/vimfiles instead.**
+
 vim configuration files
 
 Quick start
