@@ -5,12 +5,12 @@ git_status() {
 }
 
 PROMPT="%(?:%{$fg_bold[green]%}➜:%{$fg_bold[red]%}➜)"
-PROMPT+=' %{$fg[blue]%}%c%{$reset_color%} $(git_prompt_info) '
+PROMPT+=' %{$fg[blue]%}%c%{$reset_color%} $(git_prompt_info)'
 RPROMPT='${return_code} $(git_status)'
 
 # git
 ZSH_THEME_GIT_PROMPT_PREFIX="%{$fg_bold[cyan]%}"
-ZSH_THEME_GIT_PROMPT_SUFFIX="%{$reset_color%}"
+ZSH_THEME_GIT_PROMPT_SUFFIX="%{$reset_color%} "
 ZSH_THEME_GIT_PROMPT_DIRTY="%{$fg[red]%} ✘"
 ZSH_THEME_GIT_PROMPT_CLEAN="%{$fg[green]%} ✔"
 ZSH_THEME_GIT_PROMPT_UNTRACKED="%{$fg[white]%} ●%{$reset_color%}"
