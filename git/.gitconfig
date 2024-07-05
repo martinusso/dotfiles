@@ -1,6 +1,6 @@
 [user]
-        email = email here
-        name = name here
+        email = "email@here"
+        name = "Breno Martinusso"
 [push]
         default = simple
 [credential]
@@ -16,6 +16,11 @@
         co = commit
         br = branch
         ch = checkout
+	chb = checkout -b
         dif = difftool
         lg = log --pretty=short
         ls = ls-files
+	current-branch = rev-parse --abbrev-ref HEAD
+	ps = !git push origin "$(git 	current-branch)"
+	psf = !git ps --force
+	fr = reset --hard HEAD
