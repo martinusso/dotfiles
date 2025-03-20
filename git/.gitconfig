@@ -23,4 +23,6 @@
 	current-branch = rev-parse --abbrev-ref HEAD
 	ps = !git push origin "$(git 	current-branch)"
 	psf = !git ps --force
-	fr = reset --hard HEAD
+	re = reset --hard HEAD
+	fp = fetch -p
+	ro = rebase origin/main
