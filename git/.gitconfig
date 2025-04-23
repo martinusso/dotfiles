@@ -26,3 +26,4 @@
 	re = reset --hard HEAD
 	fp = fetch -p
 	ro = rebase origin/main
+	s = switch
